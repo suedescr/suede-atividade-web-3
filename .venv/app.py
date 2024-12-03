@@ -58,3 +58,5 @@ def validar_senha(senha):
 # Executando o servidor
 if __name__ == '__main__':
     app_Suede.run(debug=True)
+
+# Criação do codigo fonte para o flask
