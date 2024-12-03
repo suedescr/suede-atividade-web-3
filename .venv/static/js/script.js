@@ -8,3 +8,4 @@ function validarSenhaCadastro() {
     return true;
 }
 
+// Criação do codigo js com confirmação de senha
