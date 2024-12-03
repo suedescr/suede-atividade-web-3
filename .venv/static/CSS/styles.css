@@ -1,0 +1,242 @@
+/* Estilo do header (fixo no topo) */
+header {
+    background-color: #28a745; /* Fundo escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 20px; /* Reduzido */
+    font-weight: bold; /* Negrito */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+    position: fixed; /* Fixa no topo */
+    top: 0; /* Gruda no topo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+/* Estilo do footer (fixo no rodapé) */
+footer {
+    background-color: #28a745; /* Fundo escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa no rodapé */
+    bottom: 0; /* Gruda no final da página */
+    width: 100%; /* Ocupa toda a largura */
+    font-size: 14px; /* Tamanho do texto */
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+/* Espaçamento do conteúdo principal */
+/* Espaçamento do conteúdo principal */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fundo cinza claro */
+    padding-top: 140px; /* Espaço suficiente para compensar o header fixo */
+    padding-bottom: 50px; /* Espaço para o footer */
+}
+
+/* Estilo para o container geral */
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha itens em coluna */
+    min-height: calc(100vh - 130px); /* Altura total considerando header e footer */
+    padding: 20px;
+}
+
+/* Estilo do card/formulário */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Limita a largura */
+    width: 100%; /* Ajusta ao container */
+    box-sizing: border-box; /* Inclui padding e bordas */
+}
+
+/* Estilização do título */
+.card h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #333;
+    text-align: center; /* Centraliza o texto */
+    margin: 0 0 20px 0; /* Margem para espaçamento inferior */
+}
+
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Campos de formulário */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Cor da borda */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+    width: 100%; /* Largura total */
+    box-sizing: border-box; /* Inclui o padding no tamanho */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+/* Botão */
+button[type="submit"] {
+    background-color: #007bff; /* Fundo azul */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    color: white; /* Texto branco */
+    width: 100%; /* Ocupa toda a largura */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: scale(1.02); /* Efeito de leve aumento */
+}
+
+/* Lista de requisitos */
+ul {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Links */
+.text-decoration-none {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-decoration-none:hover {
+    text-decoration: underline;
+}
+
+/* Página de Sucesso */
+.success-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: calc(100vh - 130px); /* Altura total considerando o header e footer */
+    margin: 0 auto; /* Remove qualquer margem lateral */
+    padding: 0; /* Remove padding adicional */
+}
+
+.success-card {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 30px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    width: 100%; /* Ajusta ao tamanho do container */
+    margin: 0 auto; /* Garante centralização horizontal */
+    text-align: center; /* Centraliza o texto */
+}
+
+.success-card h1 {
+    font-size: 28px; /* Aumenta o tamanho do título */
+    color: #28a745; /* Verde para sucesso */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.success-card p {
+    font-size: 16px; /* Texto descritivo */
+    color: #555; /* Cinza claro */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.success-card a {
+    display: inline-block; /* Exibe como botão */
+    background-color: #007bff; /* Fundo azul */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    text-align: center; /* Centraliza o texto */
+}
+
+.success-card a:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: scale(1.02); /* Efeito de aumento */
+}
+
+/* Página Sobre */
+.about-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-container h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.about-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 20px;
+}
+
+.about-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+#mensagem-erro {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #28a745; /* Fundo do menu */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove padding */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho do texto */
+    transition: color 0.3s; /* Transição suave */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Cor no hover */
+}
