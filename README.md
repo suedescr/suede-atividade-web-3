@@ -9,7 +9,7 @@ Este é o **Projetinho Flask**, uma aplicação web desenvolvida para autentica�
 ### 1️⃣ Configuração Inicial
 - Configuração do projeto com Flask.
 - Estrutura inicial criada:
-  - Pastas `modelos/`, `estático/` e `templates/`.
+  - Pastas `estático/` e `templates/`.
   - Arquivo `app.py` com rotas básicas.
 
 ---
