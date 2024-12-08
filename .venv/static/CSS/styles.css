@@ -198,47 +198,55 @@ ul li {
     margin: 5px 0 20px;
 }
 
+
 .about-image {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    width: 200px; /* Define largura fixa */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: block; /* Garante centralização */
+    margin: 10px auto; /* Centraliza horizontalmente */
 }
+
+
 
 #mensagem-erro {
     margin-top: 10px;
     font-size: 14px;
 }
 
-/* Estilo do menu de navegação */
 nav {
-    background-color: #28a745; /* Fundo do menu */
-    padding: 10px 0; /* Espaçamento interno */
+    display: flex; /* Organiza os itens em linha */
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #28a745; /* Fundo verde */
+}
+
+h1 {
+    margin: 0; /* Remove margens extras */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    text-align: left; /* Alinha à esquerda */
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullets */
-    margin: 0; /* Remove margem */
+    display: flex; /* Alinha os links em linha */
+    list-style: none; /* Remove bullets */
+    margin: 0; /* Remove margens */
     padding: 0; /* Remove padding */
-    display: flex; /* Exibe os itens em linha */
-    justify-content: center; /* Centraliza os itens */
 }
 
 nav ul li {
-    margin: 0 15px; /* Espaçamento entre os itens */
+    margin-left: 15px; /* Espaçamento entre os links */
 }
 
 nav ul li a {
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado */
     font-size: 16px; /* Tamanho do texto */
-    transition: color 0.3s; /* Transição suave */
 }
 
 nav ul li a:hover {
-    color: #ddd; /* Cor no hover */
+    color: #ddd; /* Cor ao passar o mouse */
 }
-
-/* Codigo criado para estilização da pagina com  barra de navegação entre as paginas*/
